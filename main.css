@@ -133,13 +133,11 @@ input[type='search'] {
 }
 
 .hero-msg {
-  /* background-color: turquoise; */
   color: var(--light);
   position: relative;
   bottom: 500px;
   max-width: 500px;
   height: 250px;
-  /* margin-left: 40px; */
 }
 
 .hero-msg > * {
@@ -157,6 +155,40 @@ h1 {
   z-index: 10000;
 }
 
+.card-section {
+  position: relative;
+  bottom: 250px;
+
+  display: grid;
+
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 0;
+}
+
+.tile {
+  text-align: center;
+  padding: 3rem 3rem;
+  color: var(--light);
+  cursor: pointer;
+}
+.tile:hover {
+  transform: translateY(-5px);
+  transition: linear, 0.2s ease-in-out;
+}
+
+.tile > * {
+  margin: 1rem 0;
+}
+
+.brand {
+  background-color: var(--brand);
+}
+.dark {
+  background-color: var(--dark);
+}
+/* the about-section styling begins here */
 .about-section {
   color: var(--dark-secondary);
   position: relative;
@@ -198,6 +230,17 @@ h1 {
 .highlight-item > div > p {
   margin-bottom: 1rem;
 }
+.highlight-item > img {
+  align-self: center;
+  padding: 0.8rem;
+  background-color: var(--brand);
+  border-radius: 50%;
+}
+
+.tile-title {
+  font-size: 18px;
+  font-weight: 500;
+}
 
 @media only screen and (max-width: 992px) {
   .container-lg {
@@ -231,6 +274,10 @@ h1 {
   .picture-col {
     height: 500px !important;
   }
+
+  .card-section {
+    grid-template-columns: auto auto;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -249,7 +296,7 @@ h1 {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .highlight-item {
@@ -259,5 +306,9 @@ h1 {
 
   .picture-col {
     height: 300px !important;
+  }
+
+  .card-section {
+    grid-template-columns: auto;
   }
 }
