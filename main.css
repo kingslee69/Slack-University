@@ -192,7 +192,7 @@ h1 {
 .about-section {
   color: var(--dark-secondary);
   position: relative;
-  bottom: 250px;
+  bottom: 200px;
   display: grid;
   grid-template-columns: 70% 30%;
   align-items: center;
@@ -278,6 +278,35 @@ h1 {
   .card-section {
     grid-template-columns: auto auto;
   }
+
+  .warning-screen {
+    color: var(--light);
+    display: block !important;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .center {
+    max-width: 400px;
+    height: 200px;
+    text-align: center;
+    margin: 30vh auto;
+  }
+
+  .center > * {
+    margin: 1em;
+  }
+  .disappear {
+    display: none !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -309,6 +338,6 @@ h1 {
   }
 
   .card-section {
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
   }
 }

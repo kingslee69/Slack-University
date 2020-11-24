@@ -6,193 +6,211 @@
     <title>Slack University</title>
     <link rel="stylesheet" href="./main.css" />
   </head>
-  <body class="container-fluid">
-    <!-- the header starts here -->
-    <header class="container container-lg head">
-      <img src="./images/icons/SLACK.svg" alt="logo" />
-      <div class="duo mx">
-        <img src="./images/icons/telegram.svg" alt="telegram" />
-        <div class="mx">
-          <p class="tile-title">Email</p>
-          <p style="color: var(--dark-secondary)">youremail@email.com</p>
+  <body>
+    <div id="site" class="container-fluid disappear">
+      <!-- the header starts here -->
+      <header class="container container-lg head">
+        <img src="./images/icons/SLACK.svg" alt="logo" />
+        <div class="duo mx">
+          <img src="./images/icons/telegram.svg" alt="telegram" />
+          <div class="mx">
+            <p class="tile-title">Email</p>
+            <p style="color: var(--dark-secondary)">youremail@email.com</p>
+          </div>
+        </div>
+        <div class="duo mx">
+          <img src="./images/icons/phone.svg" alt="telegram" />
+          <div class="mx">
+            <p class="tile-title">Call</p>
+            <p style="color: var(--dark-secondary)">Call us: +1235 2355 98</p>
+          </div>
+        </div>
+        <button class="btn btn-brand">Apply now</button>
+      </header>
+
+      <!-- the nav starts here -->
+      <nav class="container-lg scrollmenu sticky">
+        <div class="links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#courses" class="nav-link">Courses</a>
+          <a href="#staff" class="nav-link">Staff</a>
+          <a href="#blog" class="nav-link">Blog</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="search">
+          <input type="search" placeholder="Search" />
+          <div
+            class=""
+            style="
+              display: inline;
+              justify-content: center;
+              width: 20px;
+              height: 20px;
+              background-color: var(--dark);
+              position: relative;
+              right: 51px;
+              top: 4px;
+            "
+          >
+            <img src="./images/icons/search.svg" alt="" />
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero-banner container-xl" style="height: 100vh"></section>
+      <div class="container-lg">
+        <div class="hero-msg">
+          <h1>Education Needs Complete Solution</h1>
+          <p>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia
+          </p>
+          <button class="btn-bg btn-brand btn-rounded">Contact Us</button>
         </div>
       </div>
-      <div class="duo mx">
-        <img src="./images/icons/phone.svg" alt="telegram" />
-        <div class="mx">
-          <p class="tile-title">Call</p>
-          <p style="color: var(--dark-secondary)">Call us: +1235 2355 98</p>
+
+      <!-- the card-section begin here -->
+      <div class="card-section container-fluid">
+        <div class="tile brand">
+          <img src="./images/icons/blackboard.svg" alt="icons" />
+          <p class="tile-title">Certified Teachers</p>
+          <p>
+            Even the all-powerful pointing has no control about the blind texts
+            it is an almost unorthographic
+          </p>
+        </div>
+
+        <div class="tile dark">
+          <img src="./images/icons/certificate.svg" alt="icons" />
+          <p class="tile-title">Special Education</p>
+          <p>
+            Even the all-powerful pointing has no control about the blind texts
+            it is an almost unorthographic
+          </p>
+        </div>
+
+        <div class="tile brand">
+          <img src="./images/icons/library.svg" alt="icons" />
+          <p class="tile-title">Book & Library</p>
+          <p>
+            Even the all-powerful pointing has no control about the blind texts
+            it is an almost unorthographic
+          </p>
+        </div>
+
+        <div class="tile dark">
+          <img src="./images/icons/football.svg" alt="icons" />
+          <p class="tile-title">Sport Clubs</p>
+          <p>
+            Even the all-powerful pointing has no control about the blind texts
+            it is an almost unorthographic
+          </p>
         </div>
       </div>
-      <button class="btn btn-brand">Apply now</button>
-    </header>
 
-    <!-- the nav starts here -->
-    <nav class="container-lg scrollmenu sticky">
-      <div class="links">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#courses" class="nav-link">Courses</a>
-        <a href="#staff" class="nav-link">Staff</a>
-        <a href="#blog" class="nav-link">Blog</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </div>
-
-      <div class="search">
-        <input type="search" placeholder="Search" />
+      <!-- the about section begins here -->
+      <div style="height: 500px" class="container-lg about-section">
         <div
-          class=""
-          style="
-            display: inline;
-            justify-content: center;
-            width: 20px;
-            height: 20px;
-            background-color: var(--dark);
-            position: relative;
-            right: 51px;
-            top: 4px;
-          "
+          style="height: 100%; padding: 1rem; background-color: white"
+          class="about-col"
         >
-          <img src="./images/icons/search.svg" alt="" />
-        </div>
-      </div>
-    </nav>
-
-    <section class="hero-banner container-xl" style="height: 100vh"></section>
-    <div class="container-lg">
-      <div class="hero-msg">
-        <h1>Education Needs Complete Solution</h1>
-        <p>
-          A small river named Duden flows by their place and supplies it with
-          the necessary regelialia
-        </p>
-        <button class="btn-bg btn-brand btn-rounded">Contact Us</button>
-      </div>
-    </div>
-
-    <!-- the card-section begin here -->
-    <div class="card-section container-fluid">
-      <div class="tile brand">
-        <img src="./images/icons/blackboard.svg" alt="icons" />
-        <p class="tile-title">Certified Teachers</p>
-        <p>
-          Even the all-powerful pointing has no control about the blind texts it
-          is an almost unorthographic
-        </p>
-      </div>
-
-      <div class="tile dark">
-        <img src="./images/icons/certificate.svg" alt="icons" />
-        <p class="tile-title">Special Education</p>
-        <p>
-          Even the all-powerful pointing has no control about the blind texts it
-          is an almost unorthographic
-        </p>
-      </div>
-
-      <div class="tile brand">
-        <img src="./images/icons/library.svg" alt="icons" />
-        <p class="tile-title">Book & Library</p>
-        <p>
-          Even the all-powerful pointing has no control about the blind texts it
-          is an almost unorthographic
-        </p>
-      </div>
-
-      <div class="tile dark">
-        <img src="./images/icons/football.svg" alt="icons" />
-        <p class="tile-title">Sport Clubs</p>
-        <p>
-          Even the all-powerful pointing has no control about the blind texts it
-          is an almost unorthographic
-        </p>
-      </div>
-    </div>
-
-    <!-- the about section begins here -->
-    <div style="height: 500px" class="container-lg about-section">
-      <div
-        style="height: 100%; padding: 1rem; background-color: white"
-        class="about-col"
-      >
-        <p class="title">What We Offer</p>
-        <p>
-          on her way she met a copy. The copy warned the little blind text, that
-          it came from it would have been rewritten a thousand times and
-          everything that was left from its origin would be the word.
-        </p>
-        <div class="highlight-div">
-          <div class="highlight-item mx">
-            <img src="./images/icons/mask.svg" alt="mask icon" />
-            <div class="mx">
-              <p class="tile-title">Safety First</p>
-              <p style="color: var(--dark-secondary)">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia
-              </p>
+          <p class="title">What We Offer</p>
+          <p>
+            on her way she met a copy. The copy warned the little blind text,
+            that it came from it would have been rewritten a thousand times and
+            everything that was left from its origin would be the word.
+          </p>
+          <div class="highlight-div">
+            <div class="highlight-item mx">
+              <img src="./images/icons/mask.svg" alt="mask icon" />
+              <div class="mx">
+                <p class="tile-title">Safety First</p>
+                <p style="color: var(--dark-secondary)">
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="highlight-item duo mx">
-            <img src="./images/icons/calendar.svg" alt="calendar icon" />
-            <div class="mx">
-              <p class="tile-title">Regular Classes</p>
-              <p style="color: var(--dark-secondary)">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia
-              </p>
+            <div class="highlight-item duo mx">
+              <img src="./images/icons/calendar.svg" alt="calendar icon" />
+              <div class="mx">
+                <p class="tile-title">Regular Classes</p>
+                <p style="color: var(--dark-secondary)">
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="highlight-item duo mx">
-            <img
-              src="./images/icons/certificate-bg.svg"
-              alt="certificate icon"
-            />
-            <div class="mx">
-              <p class="tile-title">Certified Teachers</p>
-              <p style="color: var(--dark-secondary)">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia
-              </p>
+            <div class="highlight-item duo mx">
+              <img
+                src="./images/icons/certificate-bg.svg"
+                alt="certificate icon"
+              />
+              <div class="mx">
+                <p class="tile-title">Certified Teachers</p>
+                <p style="color: var(--dark-secondary)">
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="highlight-item duo mx">
-            <img src="./images/icons/library-bg.svg" alt="library icon" />
-            <div class="mx">
-              <p class="tile-title">Sufficient Classrooms</p>
-              <p style="color: var(--dark-secondary)">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia
-              </p>
+            <div class="highlight-item duo mx">
+              <img src="./images/icons/library-bg.svg" alt="library icon" />
+              <div class="mx">
+                <p class="tile-title">Sufficient Classrooms</p>
+                <p style="color: var(--dark-secondary)">
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="highlight-item duo mx">
-            <img src="./images/icons/graduated.svg" alt="telegram" />
-            <div class="mx">
-              <p class="tile-title">Creative Lessons</p>
-              <p style="color: var(--dark-secondary)">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia
-              </p>
+            <div class="highlight-item duo mx">
+              <img src="./images/icons/graduated.svg" alt="telegram" />
+              <div class="mx">
+                <p class="tile-title">Creative Lessons</p>
+                <p style="color: var(--dark-secondary)">
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="highlight-item duo mx">
-            <img src="./images/icons/football-bg.svg" alt="telegram" />
-            <div class="mx">
-              <p class="tile-title">Sports Facilities</p>
-              <p style="color: var(--dark-secondary)">
-                Far far away, behind the word mountains, far from the countries
-                Vokalia
-              </p>
+            <div class="highlight-item duo mx">
+              <img src="./images/icons/football-bg.svg" alt="telegram" />
+              <div class="mx">
+                <p class="tile-title">Sports Facilities</p>
+                <p style="color: var(--dark-secondary)">
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia
+                </p>
+              </div>
             </div>
           </div>
         </div>
+        <div class="picture-col" style="height: 100%"></div>
       </div>
-      <div class="picture-col" style="height: 100%"></div>
     </div>
+    <div id="warning-screen" class="mobile-only warning-screen dark container-fluid">
+      <div class="center">
+        <h1 style="color: var(--brand)">Warning!</h1>
+        <p>
+          The content contains materials that may be traumatizing to audiences
+          viewing this on mobile devices. 
+          <br />
+          <span>&#128514&#128514</span>
+        </p>
+
+        <p class="tile-title">Viewer Discretion is Adviced</p>
+        <button onclick="showSite()" class="btn btn-brand">View site</button>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
