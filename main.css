@@ -7,6 +7,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  line-height: 1.5em;
 }
 
 :root {
@@ -26,6 +27,9 @@ body {
 }
 
 .container-fluid {
+  max-width: 100%;
+}
+.container-xl {
   max-width: 100%;
 }
 
@@ -133,7 +137,8 @@ input[type='search'] {
   color: var(--light);
   position: relative;
   bottom: 500px;
-  width: 500px;
+  max-width: 500px;
+  height: 250px;
   /* margin-left: 40px; */
 }
 
@@ -143,6 +148,7 @@ input[type='search'] {
 
 h1 {
   font-size: 3rem;
+  /* line-height: 1.5em; */
 }
 
 .sticky {
@@ -151,11 +157,55 @@ h1 {
   z-index: 10000;
 }
 
+.about-section {
+  color: var(--dark-secondary);
+  position: relative;
+  bottom: 250px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture-col {
+  background: url(./images/about.jpg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.highlight-div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  max-width: 40%;
+  margin: 1rem;
+}
+.about-col > p {
+  margin: 1rem;
+}
+
+.highlight-item > div > p {
+  margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 992px) {
-  body {
-    font-size: 14px;
-  }
   .container-lg {
+    max-width: 100%;
+  }
+
+  .container-xl {
+    overflow-x: hidden;
     max-width: 100%;
   }
 
@@ -170,16 +220,44 @@ h1 {
   .hero-msg {
     margin-left: 4rem;
   }
+
+  .about-col {
+    grid-column: span 2;
+  }
+  .picture-col {
+    grid-column: span 2;
+  }
+
+  .picture-col {
+    height: 500px !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
   .scrollmenu {
     overflow: auto;
     white-space: nowrap;
   }
 
   .hero-msg {
-    margin-left: 20px;
-    margin-right: auto;
+    margin: 0 1rem;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .highlight-item {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+  .picture-col {
+    height: 300px !important;
   }
 }
