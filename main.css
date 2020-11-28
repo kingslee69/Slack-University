@@ -129,24 +129,22 @@ input[type='search'] {
 
   display: flex;
   align-items: center;
-  padding: 20px;
+  overflow: hidden;
 }
 
 .hero-msg {
   color: var(--light);
-  position: relative;
-  bottom: 500px;
   max-width: 500px;
-  height: 250px;
+  margin: 10%;
 }
 
 .hero-msg > * {
   margin-bottom: 1.5rem;
 }
 
-h1 {
+.hero-msg > h1 {
+  line-height: 120%;
   font-size: 3rem;
-  /* line-height: 1.5em; */
 }
 
 .sticky {
@@ -156,9 +154,6 @@ h1 {
 }
 
 .card-section {
-  position: relative;
-  bottom: 250px;
-
   display: grid;
 
   grid-template-columns: auto auto auto auto;
@@ -173,9 +168,14 @@ h1 {
   color: var(--light);
   cursor: pointer;
 }
-.tile:hover {
+.tile:hover > img {
   transform: translateY(-5px);
-  transition: linear, 0.2s ease-in-out;
+  transition: ease-in-out, 0.3s ease-in-out;
+}
+
+.tile:hover > p {
+  transform: scale(0.96);
+  transition: ease-in-out, 0.3s ease-in-out;
 }
 
 .tile > * {
@@ -188,11 +188,10 @@ h1 {
 .dark {
   background-color: var(--dark);
 }
+
 /* the about-section styling begins here */
 .about-section {
   color: var(--dark-secondary);
-  position: relative;
-  bottom: 200px;
   display: grid;
   grid-template-columns: 70% 30%;
   align-items: center;
@@ -319,13 +318,17 @@ h1 {
     white-space: nowrap;
   }
 
+  .hero-banner {
+    max-height: 70vh !important;
+  }
+
   .hero-msg {
-    margin: 0 1rem;
+    margin: 40% auto;
     width: 90%;
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .highlight-item {
